@@ -46,6 +46,10 @@ MIN_OUTGOING_CONFIRMATIONS=2
 MIN_INCOMING_CONFIRMATIONS=2
 ETH_URL=${ethUrl}
 
+# Database Values
+DATABASE_URL=postgresql://${psqlUser}:${psqlPwd}@${psqlHostname}:${psqlPort}/${psqlDb}
+DATABASE_TIMEOUT=0
+
 # Settings for HTTPS (enable these or the ones below for http)
 #CHAINLINK_TLS_PORT=6689
 #SECURE_COOKIES=true
@@ -67,5 +71,8 @@ ENABLE_BULLETPROOF_TX_MANAGER=true" > /home/ec2-user/.chainlink/.env
 echo "${apiUser}
 ${apiPwd}" > /home/ec2-user/.chainlink/.api
 
+echo "${walletPwd}" > .password
+
+echo
 echo -e "Created OCR environment variables succesfully"
 echo
