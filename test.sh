@@ -4,7 +4,7 @@ case $chain in
   'ETH-Mainnet')
     chain=1
     contractAddress=0x514910771af9ca656af840dff83e8264ecf986ca
-  'Kovan-ETH-Testnet')
+  'Kovan-ETH-Testnet'/)
     chain=42
     contractAddress=0xa36085F69e2889c224210F603D836748e7dC0088
   'Rinkeby-ETH-Testnet')
