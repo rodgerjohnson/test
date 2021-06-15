@@ -1,6 +1,6 @@
 #!/bin/bash
 
-case ${chainNetwork} in
+case $chainNetwork in
   ETH-Mainnet )
     echo 'chain=1' >> /etc/environment
     echo 'contractAddress=0x514910771af9ca656af840dff83e8264ecf986ca'  >> /etc/environment
