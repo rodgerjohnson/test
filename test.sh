@@ -71,7 +71,7 @@ ENABLE_BULLETPROOF_TX_MANAGER=true" > /home/ec2-user/.chainlink/.env
 echo "${apiUser}
 ${apiPwd}" > /home/ec2-user/.chainlink/.api
 
-echo "${walletPwd}" > .password
+echo "${walletPwd}" > /home/ec2-user/.chainlink/.password
 
 echo
 echo -e "Created OCR environment variables succesfully"
