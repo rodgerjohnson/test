@@ -1,33 +1,33 @@
 #!/bin/bash
 
-case $chain in
+case ${chainNetwork} in
   'ETH-Mainnet')
-    chain=1
-    contractAddress=0x514910771af9ca656af840dff83e8264ecf986ca
+    echo 'chain=1' >> /etc/environment
+    echo 'contractAddress=0x514910771af9ca656af840dff83e8264ecf986ca'  >> /etc/environment
     ;;
   'Kovan-ETH-Testnet')
-    chain=42
-    contractAddress=0xa36085F69e2889c224210F603D836748e7dC0088
+    echo 'chain=42'  >> /etc/environment
+    echo 'contractAddress=0xa36085F69e2889c224210F603D836748e7dC0088'  >> /etc/environment
     ;;
   'Rinkeby-ETH-Testnet')
-    chain=4
-    contractAddress=0x01BE23585060835E02B77ef475b0Cc51aA1e0709
+    echo 'chain=4'  >> /etc/environment
+    echo 'contractAddress=0x01BE23585060835E02B77ef475b0Cc51aA1e0709'  >> /etc/environment
     ;;
   'xDai-Mainnet')
-    chain=100
-    contractAddress=0xE2e73A1c69ecF83F464EFCE6A5be353a37cA09b2
+    echo 'chain=100'  >> /etc/environment
+    echo 'contractAddress=0xE2e73A1c69ecF83F464EFCE6A5be353a37cA09b2' >> /etc/environment
     ;;
   'Heco-Mainnet')
-    chain=128
-    contractAddress=0x9e004545c59D359F6B7BFB06a26390b087717b42
+    echo 'chain=128'  >> /etc/environment
+    echo 'contractAddress=0x9e004545c59D359F6B7BFB06a26390b087717b42'  >> /etc/environment
     ;;
   'BSC-Mainnet')
-    chain=56
-    contractAddress=0x404460c6a5ede2d891e8297795264fde62adbb75
+    echo 'chain=56'  >> /etc/environment
+    echo 'contractAddress=0x404460c6a5ede2d891e8297795264fde62adbb75' >> /etc/environment
     ;;
   'Matic-Mainnet')
-    chain=137
-    contractAddress=0xb0897686c545045afc77cf20ec7a532e3120e0f1
+    echo 'chain=137' >> /etc/environment
+    echo 'contractAddress=0xb0897686c545045afc77cf20ec7a532e3120e0f1' >> /etc/environment
     ;;
 esac
 
