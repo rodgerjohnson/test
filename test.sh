@@ -51,14 +51,14 @@ DATABASE_URL=postgresql://${psqlUser}:${psqlPwd}@${psqlHostname}:${psqlPort}/${p
 DATABASE_TIMEOUT=0
 
 # Settings for HTTPS (enable these or the ones below for http)
-CHAINLINK_TLS_PORT=6689
-SECURE_COOKIES=true
-TLS_CERT_PATH=/chainlink/tls/server.crt
-TLS_KEY_PATH=/chainlink/tls/server.key
+#CHAINLINK_TLS_PORT=6689
+#SECURE_COOKIES=true
+#TLS_CERT_PATH=/chainlink/tls/server.crt
+#TLS_KEY_PATH=/chainlink/tls/server.key
 
 # Setting for HTTP
-#CHAINLINK_TLS_PORT=0
-#SECURE_COOKIES=false
+CHAINLINK_TLS_PORT=0
+SECURE_COOKIES=false
 
 # Transaction Improvements
 GAS_UPDATER_ENABLED=true
